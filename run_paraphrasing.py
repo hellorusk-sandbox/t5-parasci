@@ -120,14 +120,14 @@ class DataTrainingArguments:
     validation_file: Optional[str] = field(
         default=None,
         metadata={
-            "help": "An optional input evaluation data file to evaluate the metrics (rouge) on "
+            "help": "An optional input evaluation data file to evaluate the metrics (sacreblue) on "
             "(a jsonlines or csv file)."
         },
     )
     test_file: Optional[str] = field(
         default=None,
         metadata={
-            "help": "An optional input test data file to evaluate the metrics (rouge) on " "(a jsonlines or csv file)."
+            "help": "An optional input test data file to evaluate the metrics (sacreblue) on " "(a jsonlines or csv file)."
         },
     )
     overwrite_cache: bool = field(
@@ -300,8 +300,8 @@ def main():
     # or just provide the name of one of the public datasets available on the hub at https://huggingface.co/datasets/
     # (the dataset will be downloaded automatically from the datasets Hub).
     #
-    # For CSV/JSON files this script will use the first column for the full texts and the second column for the
-    # summaries (unless you specify column names for this with the `source_column` and `target_column` arguments).
+    # For CSV/JSON files this script will use the first column for the source sentence and the second column for the
+    # target sentence (unless you specify column names for this with the `source_column` and `target_column` arguments).
     #
     # In distributed training, the load_dataset function guarantee that only one local process can concurrently
     # download the dataset.
@@ -474,7 +474,7 @@ def main():
 
     def postprocess_text(preds, labels):
         preds = [pred.strip() for pred in preds]
-        labels = [label.strip() for label in labels]
+        labels = [[label.strip()] for label in labels]
 
         return preds, labels
 

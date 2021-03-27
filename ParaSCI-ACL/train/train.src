@@ -15199,7 +15199,7 @@ zbib et al used crowdsourcing to build levantine-english and egyptian-english pa
 prior work has shown that pointwise mutual information is the most consistent scoring method for evaluating topic model coherence .
 we use the moses statistical mt toolkit to perform the translation .
 in the sentences bag of one entity pair , zeng et al select the most reliable sentence , and lin et al propose attention schemes to de-emphasize unreliable sentences .
-﻿we used pos tags predicted by the stanford pos tagger .
+we used pos tags predicted by the stanford pos tagger .
 abdul-mageed and ungar used distant supervision to construct a large dataset from the general twitter for fine-grained emotion detection and explored deep learning models to detect emotions .
 mcdonald and pereira presented a graph-based parser that can generate graphs in which a word may depend on multiple heads , and evaluated it on the danish treebank .
 twitter is a widely used microblogging environment which serves as a medium to share opinions on various events and products .
@@ -23090,7 +23090,7 @@ the experiments of the phrase-based smt systems are carried out using the open s
 this paper proposes a simple yet effective framework for semi-supervised dependency parsing at entire tree level , referred to as ambiguity-aware ensemble training .
 the word embeddings are initialized with pre-trained word vectors using word2vec 1 and other parameters are randomly initialized including pos embeddings .
 we used a 4-gram language model which was trained on the xinhua section of the english gigaword corpus using the srilm 4 toolkit with modified kneser-ney smoothing .
-﻿"socher et al used recursive neural networks to model sentences for different tasks , including paraphrase detection and sentence classification .
+socher et al used recursive neural networks to model sentences for different tasks , including paraphrase detection and sentence classification .
 coreference resolution is a key task in natural language processing ( cite-p-13-1-8 ) aiming to detect the referential expressions ( mentions ) in a text that point to the same entity .
 in recent years , many researchers build alignment links with bilingual corpora .
 a multiword expression is any combination of words with lexical , syntactic or semantic idiosyncrasy , in that the properties of the mwe are not predictable from the component words .
@@ -23920,7 +23920,7 @@ manually aligning each video segment with a sentence is tedious , especially for
 sentence compression is the task of compressing long sentences into short and concise ones by deleting words .
 case-insensitive nist bleu was used to measure translation performance .
 we used the bleu score to evaluate the translation accuracy with and without the normalization .
-﻿"entity linking ( el ) is the task of disambiguating mentions in text by associating them with entries in a predefined database of mentions ( persons , organizations , etc ) .
+entity linking ( el ) is the task of disambiguating mentions in text by associating them with entries in a predefined database of mentions ( persons , organizations , etc ) .
 we use the open source moses phrase-based mt system to test the impact of the preprocessing technique on translation quality .
 we used the target side of the parallel corpus and the srilm toolkit to train a 5-gram language model .
 dave et al , riloff and wiebe , bethard et al , wilson et al , yu and hatzivassiloglou , choi et al , kim and hovy , wiebe and riloff , .

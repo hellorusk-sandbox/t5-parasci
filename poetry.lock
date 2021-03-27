@@ -754,6 +754,21 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "portalocker"
+version = "2.0.0"
+description = "Wraps the portalocker recipe for easy usage"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pywin32 = {version = "!=226", markers = "platform_system == \"Windows\""}
+
+[package.extras]
+docs = ["sphinx (>=1.7.1)"]
+tests = ["pytest (>=4.6.9)", "pytest-cov (>=2.8.1)", "sphinx (>=1.8.5)", "pytest-flake8 (>=1.0.5)"]
+
+[[package]]
 name = "prometheus-client"
 version = "0.9.0"
 description = "Python client for the Prometheus monitoring system."
@@ -998,6 +1013,20 @@ python-versions = ">=3.5, <4"
 
 [package.dependencies]
 pyasn1 = ">=0.1.3"
+
+[[package]]
+name = "sacrebleu"
+version = "1.5.1"
+description = "Hassle-free computation of shareable, comparable, and reproducible BLEU, chrF, and TER scores"
+category = "main"
+optional = false
+python-versions = ">=3"
+
+[package.dependencies]
+portalocker = "2.0.0"
+
+[package.extras]
+ja = ["mecab-python3 (==1.0.3)", "ipadic (>=1.0,<2.0)"]
 
 [[package]]
 name = "sacremoses"
@@ -1262,7 +1291,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d2ad008ae742157ceac7ab7d134623d567770a48b7e8e78293090c3ff237fa73"
+content-hash = "050e13f83ecac5ae388f91926b694b59d05f6ee176dfb1cdf217b3c5a181edf6"
 
 [metadata.files]
 absl-py = [
@@ -1731,6 +1760,10 @@ pickleshare = [
     {file = "pickleshare-0.7.5-py2.py3-none-any.whl", hash = "sha256:9649af414d74d4df115d5d718f82acb59c9d418196b7b4290ed47a12ce62df56"},
     {file = "pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
 ]
+portalocker = [
+    {file = "portalocker-2.0.0-py2.py3-none-any.whl", hash = "sha256:5d7bc386d785dfc87e763a29d7d5864556c62653379e3ff484c71e49425d1898"},
+    {file = "portalocker-2.0.0.tar.gz", hash = "sha256:14487eed81aa914127edf0284e29c7ca8842c05bb33d96dc7e4bdb47282d26e4"},
+]
 prometheus-client = [
     {file = "prometheus_client-0.9.0-py2.py3-none-any.whl", hash = "sha256:b08c34c328e1bf5961f0b4352668e6c8f145b4a087e09b7296ef62cbe4693d35"},
     {file = "prometheus_client-0.9.0.tar.gz", hash = "sha256:9da7b32f02439d8c04f7777021c304ed51d9ec180604700c1ba72a4d44dceb03"},
@@ -1977,6 +2010,10 @@ requests-oauthlib = [
 rsa = [
     {file = "rsa-4.7.2-py3-none-any.whl", hash = "sha256:78f9a9bf4e7be0c5ded4583326e7461e3a3c5aae24073648b4bdfa797d78c9d2"},
     {file = "rsa-4.7.2.tar.gz", hash = "sha256:9d689e6ca1b3038bc82bf8d23e944b6b6037bc02301a574935b2dd946e0353b9"},
+]
+sacrebleu = [
+    {file = "sacrebleu-1.5.1-py3-none-any.whl", hash = "sha256:fbe54fcc7f4e370c9ded0c7cb9bbdadabc020bcde9217daea043b4906b962fdc"},
+    {file = "sacrebleu-1.5.1.tar.gz", hash = "sha256:e8184f0d2ec45dd7ef0883fbce3976b2b7cf581e04d0854ac5f7eb394318b84b"},
 ]
 sacremoses = [
     {file = "sacremoses-0.0.43.tar.gz", hash = "sha256:123c1bf2664351fb05e16f87d3786dbe44a050cfd7b85161c09ad9a63a8e2948"},

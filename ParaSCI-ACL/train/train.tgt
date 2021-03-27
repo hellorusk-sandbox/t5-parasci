@@ -15199,7 +15199,7 @@ zbib et al built two dialectal arabic-english parallel corpora for egyptian and 
 we employ normalised pointwise mutual information which outperforms other metrics in measuring topic coherence .
 we translated each german sentence using the moses statistical machine translation toolkit .
 lin et al utilize selective attention to aggregate the information of all sentences to extract relational facts .
-﻿"for tagging , we use the stanford pos tagger package .
+for tagging , we use the stanford pos tagger package .
 abdul-mageed and ungar , 2017 ) built a large , automatically curated dataset for emotion detection using distant supervision and then used grnns to model finegrained emotion .
 in addition to the investigation on the transition-based approach , mcdonald and pereira presented a factorization parser that can generate dependency graphs in which a word may depend on multiple heads , and evaluated it on the danish treebank .
 twitter is a communication platform which combines sms , instant messages and social networks .
@@ -23920,7 +23920,7 @@ pairing each video segment or image frame with the corresponding sentence can be
 sentence compression is a complex paraphrasing task with information loss involving substitution , deletion , insertion , and reordering operations .
 the evaluation metric for the overall translation quality was case-insensitive bleu4 .
 we used the machine translation quality metric bleu to measure the similarity between machine generated tweets and the held out tests sets .
-﻿"entity linking ( el ) is the task of mapping specific textual mentions of entities in a text document to an entry in a large catalog of entities , often called a knowledge base or kb , and is one of the major tasks in the knowledge-base population track at the text analysis conference ( tac ) ( cite-p-23-3-1 ) .
+entity linking ( el ) is the task of mapping specific textual mentions of entities in a text document to an entry in a large catalog of entities , often called a knowledge base or kb , and is one of the major tasks in the knowledge-base population track at the text analysis conference ( tac ) ( cite-p-23-3-1 ) .
 we used the open source moses phrase-based mt system to test the impact of the preprocessing technique on translation results .
 we used a 5-gram language model trained on 126 million words of the xinhua section of the english gigaword corpus , estimated with srilm .
 dave et al , riloff and wiebe , bethard et al , pang and lee , wilson et al , yu and hatzivassiloglou , .
